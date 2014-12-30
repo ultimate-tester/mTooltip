@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="mTooltip.css">
+	
+	<title>mTooltip Demonstration</title>
+</head>
+<body>
+	<a href="javascript://" data-mTooltipText="Hey">Hover over Me</a>
+	<a href="javascript://" data-mTooltipText="How">Hover over Me</a>
+	<a href="javascript://" data-mTooltipText="Are">Hover over Me</a>
+	<a href="javascript://" data-mTooltipText="You?">Hover over Me</a>
+	<a href="javascript://" data-mTooltipText="Very Long Text">Hover over Me</a>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="mTooltip.js"></script>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('*[data-mTooltipText]').mTooltip();
+		});
+	</script>
+</body>
+</html>
